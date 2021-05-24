@@ -1,0 +1,6 @@
+framework module PHUD {
+  umbrella header "PHUD-umbrella.h"
+
+  export *
+  module * { export * }
+}
