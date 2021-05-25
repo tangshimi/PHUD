@@ -42,7 +42,7 @@
 		6966D7E515965934E760F4C9093B9600 /* PKHUDAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3097C149F4CCDAB8B1E4015DC4AFFF9 /* PKHUDAnimation.swift */; };
 		6970C239265BA77600F4E75A /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 6970C237265BA77600F4E75A /* .gitkeep */; };
 		6970C23A265BA77600F4E75A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6970C238265BA77600F4E75A /* Images.xcassets */; };
-		6970C242265BA7EC00F4E75A /* PHUDAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6970C241265BA7EC00F4E75A /* PHUDAssets.swift */; };
+		6970C24A265C97E800F4E75A /* PHUDAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6970C249265C97E800F4E75A /* PHUDAssets.swift */; };
 		734653D0BE5A058F33D200C534C327AC /* Pods-PHUD_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0477D50E83328EC229376DBEA339505 /* Pods-PHUD_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7395EA44BFA0A10F6DC385EA7A6C507D /* Pods-PHUD_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F6430ADD8F7BE6EBC3D95DF0CA0664 /* Pods-PHUD_Example-dummy.m */; };
 		73A41B91C47DCC8803BCC230D28EAE5A /* PHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3914BE8196F179EB6073D8FE48F49FBD /* PHUD.swift */; };
@@ -182,7 +182,7 @@
 		683DBB5BDDAFAC43F5F9A3D4DBE5CCEC /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PKHUD/Images.xcassets; sourceTree = "<group>"; };
 		6970C237265BA77600F4E75A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		6970C238265BA77600F4E75A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6970C241265BA7EC00F4E75A /* PHUDAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHUDAssets.swift; sourceTree = "<group>"; };
+		6970C249265C97E800F4E75A /* PHUDAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PHUDAssets.swift; path = PHUD/Classes/PHUDAssets.swift; sourceTree = "<group>"; };
 		6B548F8DD6A201D1A3DCC905EAA60488 /* PKHUDRotatingImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDRotatingImageView.swift; path = PKHUD/PKHUDRotatingImageView.swift; sourceTree = "<group>"; };
 		6DC7ADB7743B1B8D137980B14B3CCDEC /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F4DE8FF9C61974AB85E2D5158D54072 /* PKHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PKHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -461,7 +461,7 @@
 				F9DDDE6681181626CFF95BC7DBECF59A /* PHUDSquareBaseView.swift */,
 				3049114DF37ED4DB103828FAD13E23C1 /* PHUDSystemActivityIndicatorView.swift */,
 				24575126FE337838AB5A6580DD001016 /* PHUDTextView.swift */,
-				6970C241265BA7EC00F4E75A /* PHUDAssets.swift */,
+				6970C249265C97E800F4E75A /* PHUDAssets.swift */,
 				D17789030111E6F9E33793B532EEE779 /* Pod */,
 				749FA19297E9359FF90919B9DBFAA616 /* Support Files */,
 			);
@@ -864,7 +864,7 @@
 				1C41B198F1D70F5FA11A45FC182B5F4A /* PHUD-dummy.m in Sources */,
 				73A41B91C47DCC8803BCC230D28EAE5A /* PHUD.swift in Sources */,
 				2D44D646C43A7F6C6CE0D2A073E086B4 /* PHUDSquareBaseView.swift in Sources */,
-				6970C242265BA7EC00F4E75A /* PHUDAssets.swift in Sources */,
+				6970C24A265C97E800F4E75A /* PHUDAssets.swift in Sources */,
 				09B5F5AAA33B68DA086C0A64F7C36331 /* PHUDSystemActivityIndicatorView.swift in Sources */,
 				59E7223D85CCAECAA97AFCF7E07985B0 /* PHUDTextView.swift in Sources */,
 			);
