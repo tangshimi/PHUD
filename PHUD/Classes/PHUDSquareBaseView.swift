@@ -31,21 +31,20 @@ public class PHUDSquareBaseView: UIView {
         addSubview(imageView)
         addSubview(titleLabel)
         
-        imageView.snp.makeConstraints { (make) in
-            make.centerX.equalToSuperview()
-            make.top.equalTo(15)
-        }
+        imageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 15).isActive = true
         
-        titleLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(55)
-            make.left.right.bottom.equalToSuperview()
-        }
+        titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 55).isActive = true
+        titleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        titleLabel.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
     }
     
     public let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.clipsToBounds = true
         imageView.contentMode = .center
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
@@ -58,6 +57,7 @@ public class PHUDSquareBaseView: UIView {
         label.numberOfLines = 2
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.25
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 

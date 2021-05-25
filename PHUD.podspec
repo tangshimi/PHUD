@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PHUD'
   s.module_name      = 'PHUD'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'A short description of PHUD.'
 
   s.description      = 'PHUD'
@@ -19,8 +19,7 @@ Pod::Spec.new do |s|
   s.author           = { 'tangshimi' => 'tangshimi@sina.cn' }
   s.source           = { :git => 'https://github.com/tangshimi/PHUD.git', :tag => s.version.to_s }
 
-  s.platform                  = :ios, '8.0'
-  s.ios.deployment_target     = '8.0'
+  s.ios.deployment_target     = '9.0'
   
   s.swift_version             = '5.0'
 
@@ -31,6 +30,5 @@ Pod::Spec.new do |s|
   }
 
   s.dependency 'PKHUD'
-  s.dependency 'SnapKit'
 
 end

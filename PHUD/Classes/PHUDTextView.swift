@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SnapKit
 
 public class PHUDTextView: UIView {
     public init(text: String?) {
@@ -25,10 +24,11 @@ public class PHUDTextView: UIView {
         titleLabel.text = text
         addSubview(titleLabel)
         
-        titleLabel.snp.makeConstraints { (make) in
-            make.edges.equalTo(UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
-        }
-        
+        titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
+        titleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10).isActive = true
+        titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
+        titleLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10).isActive = true
+
         let width = titleLabel.systemLayoutSizeFitting(UIScreen.main.bounds.size).width
         titleLabel.frame = CGRect(x: 0, y: 0, width: width, height: 0)
         let height = requiredHeight()
@@ -52,6 +52,7 @@ public class PHUDTextView: UIView {
         label.textColor = UIColor.white
         label.preferredMaxLayoutWidth = UIScreen.main.bounds.width - 80
         label.numberOfLines = 0
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     

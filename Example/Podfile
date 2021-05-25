@@ -3,7 +3,6 @@ use_frameworks!
 platform :ios, '9.0'
 
 pod 'PKHUD'
-pod 'SnapKit'
 
 target 'PHUD_Example' do
   pod 'PHUD', :path => '../'
