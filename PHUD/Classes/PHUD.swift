@@ -66,9 +66,9 @@ public final class PHUD {
     fileprivate static func contentView(_ content: PHUDContentType) -> UIView {
         switch content {
         case let .labeledSuccess(title):
-            return PHUDSquareBaseView(image: UIImage(named: "hud_success"), title: title)
+            return PHUDSquareBaseView(image: PHUDAssets.successImage, title: title)
         case let .labeledError(title):
-            return PHUDSquareBaseView(image: UIImage(named: "hud_fail"), title: title)
+            return PHUDSquareBaseView(image: PHUDAssets.failImage, title: title)
         case let .label(text):
             return PHUDTextView(text: text)
         case .systemActivity:

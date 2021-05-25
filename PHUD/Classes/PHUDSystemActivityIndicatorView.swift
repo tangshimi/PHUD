@@ -38,7 +38,7 @@ public class PHUDSystemActivityIndicatorView: PHUDSquareBaseView, PKHUDAnimating
     }
     
     let activityIndicatorView: UIActivityIndicatorView = {
-        let activity = UIActivityIndicatorView(style: .whiteLarge)
+        let activity = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
         activity.hidesWhenStopped = false
         return activity
     }()

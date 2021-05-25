@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import PHUD
+import PKHUD
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        PHUD.show(.labeledSuccess(title: "成功了"))
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

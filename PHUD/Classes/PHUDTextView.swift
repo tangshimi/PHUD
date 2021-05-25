@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwifterSwift
+import SnapKit
 
 public class PHUDTextView: UIView {
     public init(text: String?) {
@@ -39,8 +39,8 @@ public class PHUDTextView: UIView {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: titleLabel.frame.width, height: CGFloat.greatestFiniteMagnitude))
         label.numberOfLines = 0
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
-        label.font = font
-        label.text = text
+        label.font = titleLabel.font
+        label.text = titleLabel.text
         label.sizeToFit()
         return label.frame.height
     }
@@ -50,7 +50,7 @@ public class PHUDTextView: UIView {
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 17.0)
         label.textColor = UIColor.white
-        label.preferredMaxLayoutWidth = UIScreen.width - 80
+        label.preferredMaxLayoutWidth = UIScreen.main.bounds.width - 80
         label.numberOfLines = 0
         return label
     }()
