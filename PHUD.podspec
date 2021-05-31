@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PHUD'
   s.module_name      = 'PHUD'
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = 'A short description of PHUD.'
 
   s.description      = 'PHUD'
